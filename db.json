@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "id": 6,
+      "titre": "mon titre updated",
+      "description": "dia updated"
+    },
+    {
+      "id": 8,
+      "titre": "mon titre",
+      "description": "description"
+    },
+    {
+      "id": 9,
+      "titre": "mon titre ajoute",
+      "description": "ma description ajoute"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

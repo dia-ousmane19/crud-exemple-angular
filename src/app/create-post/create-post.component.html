@@ -1,0 +1,15 @@
+<form [formGroup]="formValue">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Titre</label>
+        <input type="text" formControlName="titre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div *ngIf="formValue.controls.titre.invalid && (formValue.controls.titre.dirty || formValue.controls.titre.touched)">
+            <div class="alert alert-warning">Renseigner ce champs svp !</div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Description</label>
+        <input type="text" formControlName="description" class="form-control" id="exampleInputPassword1">
+    </div>
+
+    <button type="button" (click)="store()" class="btn btn-primary">add</button>
+</form>

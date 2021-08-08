@@ -1,0 +1,24 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Titre</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let post of posts">
+                <th scope="row">{{post.id}}</th>
+                <td>{{post.titre}}</td>
+                <td>{{post.description}}</td>
+                <td>
+                    <a routerLink="/posts/{{post.id}}" class="btn btn-primary">edit</a>
+                    <a (click)="deletePost(post.id)" class="btn btn-danger">delete</a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
